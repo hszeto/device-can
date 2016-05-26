@@ -14,5 +14,11 @@
 //= require jquery_ujs
 //= require tether
 //= require bootstrap-sprockets
-//= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+    var page = location.pathname;
+    if (page === "/")  {
+        $('ul.main-nav.js--main-nav li a').addClass("sign-up-nav");
+    }
+});

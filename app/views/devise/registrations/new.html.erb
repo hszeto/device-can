@@ -1,17 +1,16 @@
-<div class="jumbotron textCenter">
-  <h2>Sign up</h2>
+  <h3>Sign up</h3>
 
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     <%= devise_error_messages! %>
 
     <div class="field">
       <%= f.label :name %><br />
-      <%= f.text_field :name %>
+      <%= f.text_field :name, autofocus: true %>
     </div>
 
     <div class="field">
       <%= f.label :email %><br />
-      <%= f.email_field :email, autofocus: true %>
+      <%= f.email_field :email%>
     </div>
 
     <div class="field">
@@ -28,9 +27,8 @@
     </div>
 
     <div class="actions">
-      <%= f.submit "Sign up", class: "btn btn-primary" %>
+      <%= f.submit "Submit", class: "btn sign-up" %>
     </div>
   <% end %>
 
-  <%= render "devise/shared/links" %>
-</div>
+<!--  <%#= render "devise/shared/links" %>-->

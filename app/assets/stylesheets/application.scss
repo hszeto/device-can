@@ -11,8 +11,207 @@
  * file per style scope.
  *
  */
-@import "bootstrap";
 
-.textCenter{
-  text-align: center;
+/*--------------------*/
+/* BASIC SETUP */
+/*--------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #f4f4f4;
+    color: #555;
+    font-family: 'Lato','Arial',sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+//.row{
+//    max-width: 1140px;
+//    margin: 0 auto;
+//}
+
+
+
+/*--------------------*/
+/* SHARED SETTINGS */
+/*--------------------*/
+h1,
+h2{
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+h1{
+    font-size: 240%;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+h2{
+    font-size: 180%;
+    text-align: center;
+}
+
+h3{
+    padding: 30px;
+}
+
+
+
+/*--------------------*/
+/* MAIN NAVI */
+/*--------------------*/
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #cf6d17;
+}
+
+.sign-up-nav{
+    color: #fff;
+}
+
+//nav{
+//    margin-top: 30px;
+//    margin-right: 30px;
+//    
+//}
+
+/*--------------------*/
+/* WELCOME */
+/*--------------------*/
+
+//@import "bootstrap";
+
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("thumb.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.welcome-page{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+
+/*--------------------*/
+/* SIGN UP */
+/*--------------------*/
+
+.new_user{
+    margin-left: 100px;
+}
+
+
+.field{
+    margin-left: 100px;
+    padding: 8px 0;
+}
+
+input[type=text], 
+input[type=password],
+input[type=email] {
+    width: 50%;
+    padding: 8px 8px;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.actions{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+input[type=submit],
+input[type=hidden] {
+    font-size: 20px;
+    box-sizing:content-box;
+    padding: 8px 3%;
+    border: 1px solid #555;
+    border-radius:5px;
+}
+
+
+
+/*--------------------*/
+/* SIGN IN */
+/*--------------------*/
+
+.shared-link-style{
+    margin-left: 200px;
+}
+
+/*--------------------*/
+/* PASSWORD */
+/*--------------------*/
+
+.password-actions{
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+/*--------------------*/
+/* ERROR MESSAGES */
+/*--------------------*/
+
+#error_explanation{
+    color: red;
+    padding-bottom: 30px;
+}
+
+#flash_alert{
+    color: red;
+}
+
+/*--------------------*/
+/* TABLE */
+/*--------------------*/
+table, th, td{
+    margin-left: 50px;
+    border-collapse: collapse;
+    border: 1px solid #555;
+    padding: 15px;
+    text-align: left;
 }
